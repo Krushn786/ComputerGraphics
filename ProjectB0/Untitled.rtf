@@ -1,0 +1,107 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica-Oblique;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww33400\viewh21000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 IF THE GAME DOESN\'92T WORK ON YOUR BROWSER!\
+	
+\f1\i\b0 *) Go the Mozilla FireFox -> type in url \'93about:config\'94 -> search for \'93privacy.file_unique_orign\'94 -> turn to value to \'93false\'94 by clicking on the right hand button\
+	*) The open the index.html link again and should work!\
+
+\f0\i0\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Description:
+\f2\b0 \
+	*) This game is single player RollABall game where the player can roll the ball to collect the objects around in 2 minutes!\
+	\
+	*) Collect as many point you can in 2 minutes!\
+\
+
+\f0\b Credit:
+\f2\b0 \
+	*) This a tutorial game on unity.com and YouTube.com/unity\
+\
+
+\f0\b Interface:
+\f2\b0 \
+	*) The game starts with a start scene where it describes on how to play the game, and a start button!\
+\
+	*) Once the button is pressed it will take you the game screen\
+\
+	*) To make this game interesting I download \
+		-) Assets from unity.com/unitystore (soccer ball)\
+		-) Pictures of grass and brick wall from pixie.com\
+		-) The objects that are to be collected are always rotating so it is always attractive to go and collect them\
+		-) And also made invisible HIGH walls to make the game interesting\
+\
+
+\f0\b How to Play and Game Details
+\f2\b0 :\
+	*) You can use arrow keys or \'93W A S D\'94 keys to move around the game area\
+\
+	*)You can use \'93spacebar\'94 or \'93J\'94 to jump [The reaction time of jump is pretty good! It works.]\
+		-) The code works with a \ul bool variable\ulnone  where every time you jump the jump keys are disabled, and every time there is a contact with the ground the jump key is enable\
+\
+	*) The score board is on the top-left of the screen\
+		-) The score updates every second\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 		-)Anytime the player collects the object in the field the object disappears and players get +2 points(yellow box), +3 points(red box), +4 points(blue box)\
+			+) The object appears back after 10 minutes\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+	*) Anytime the player hits the wall the player losses -1 point or some box that are tiggerBoxes player losses -1 point\
+		-) The points will never go NEGATIVE it will ALWAYS stay at 0\
+\
+	*) There is a Timer on the top-right corner so you can keep track of time\
+		-) The timer will not start until and unless you don\'92t start moving the ball\
+		-) The timer will automatically stop once it get to 0.00\
+\
+	*) There is a BANNER that POPS ON THE SCREEN and POPS OUT OF THE SCREEN\
+		-) The banner will show 3 times during the game with a message!\
+			+)\'94Use Commands To Move\'94\'97> The Timer won\'92t start without this\
+			+)\'94One 1 Left\'94 \'97> Heads up on half time has passed\
+			+)\'94Times Up\'94 \'97> Will automatically stops the game, however keeps the ball rotating to confuse player if they can still move! HOWEVER THEY CANNOT!\
+\
+
+\f0\b This a link to my game which you can access online:
+\f2\b0 \
+	*) https://sharemygame.com/@krushn786/roll-a-ball\
+
+\f1\i \
+\
+
+\f0\i0\b EXTRA CREDIT:\
+	Given by Prof.
+\f2\b0 \
+	*) I followed the Roll A Ball Tutorial, however I ended up making my own script for player.cs because I didn\'92t wanted to copy the code. And wanted to do something unique!\
+	*) I added textures to wall and the ground to make it look little realistic.\
+	*) Add fancy colors to the collectable objects\
+	*) After 10 sec of the box disappearing the box appears back\
+	*) Limited time to 2 minutes so the game doesn\'92t run for infinity\
+	*) Collision reduce point and the collecting object gains point\
+	*) Display score on screen\
+	\
+	
+\f0\b WAS NOT ABLE TO ACHIEVE\
+	*) Multiplayer(Actually this game was done on Sunday however I thought Multiplayer part of the game was important so I never end up submitting)\
+		-) I recently talked to TA on (9/18/2020) and he explained that it was just a extra credit feature!\
+		\
+		-) Sorry for the inconvenience!\
+\
+	My idea(Out of the Box)\
+	
+\f2\b0 *) I made the banners appear and disappear!\
+	*) Rather that just using colors and textures on the sphere, I went on unitystore and downloaded an asset that was a soccer-ball!\
+	*) I added a \ul bounce material\ulnone  to the field and walls so there would be the real life effects\
+	*) I added 2 scenes to make the game user friendly!\
+	*) Added different kind of box that will give different kind of points\
+	*) Some yellow boxes, red boxes and blue boxes will reduce 1 points. This is to trick players on collecting and losing points!\
+\
+\
+\
+\
+\
+}
