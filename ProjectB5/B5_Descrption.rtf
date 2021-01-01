@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww26360\viewh20500\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97Short Description of my project\'97\'97\'97\'97\'97\'97\'97\
+So there are three different scenarios in the scene.\
+\
+1st  - (Non-user controllable): In this part Agent named Dan, calls Agent named Jason. Dan tells Jason about an issue that he had with Agent named Jake. How the issue escalated! Jason eventually invites Dan to resolve the issue over a drink. \
+					Jason eventually calls Jake to resolve the issue and invites him over the drink.\
+\
+\
+2nd - (User-Interactive): There will be series of action in this part that user has to select by yes or no, and eventually it will reflect on part 3 output!\
+\
+3rd - As prof, asked for different output. Part3 depends totally on part 2. If the user-interaction was positive than Dan will win the fight of argument putting Jake into shame, however if the user-interaction was negative than the there will be two options. Fight Jake for dignity, or take that L and go home!\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 5. [4 points] Implement at least 2 new affordances \
+
+\fs28 	My first affordance is pressing a button. The method name is openDoor(\'85)\
+	The player interact with a button on wall, and once they press the button the gate opens.\
+\
+	I used Node_StartInteraction(.. , ..) to trigger the button for opening the gate!\
+	I used clapping to close the gate because I only implemented the button on inside [[[[[[[creative idea]]]]]]\
+\
+	My second Affordance is dialogue box\
+	I used the tutorial by MR.Sam to implement this affordance\
+	This affordance tis named asSetDialougeText(\'93String\'94)\
+	It displays text on screen like a typing behavior, and eventually once all the dialogue is printed, it will wait for given time, and move on to next dialogue if there\
+	If not it will return Success.
+\fs24 \
+\
+6. [4 points] Implement your behavior tree using KADAPT library\
+	
+\fs28 I used <BehaviorMechinism> all the way through for my project\
+	I used the method Node_GoTo_Radius(.., , .. , ..) for moving places\
+	I used the method Node_OrientTowards(.. , ..) to make my character face the direction I needed them to face\
+	And many more \
+\
+	All the description will be in my chart
+\fs24 \
+\
+7. [4 points] Use Inverse Kinematics to create two additional affordances for use in your behavior \
+\
+	
+\fs28 I was only able to create one\
+\
+	For this I created shaking hand. The method is handShake()\
+	The method takes in 2 players that are going to interact for the hand shake\
+	This method uses Quaternion.LookRotation for making people face each other during the handshake\
+	I used StartInteraction, and had a shakePoint\{Interaction-Object\} that both people would interact at the same time for a handshake
+\fs24 \
+	\
+\
+8. [2 point] Create a specific control node of your own\
+	\
+	
+\fs28 One of my specific node I created was openDoor(). It\'92s not only an affordance but also a great tool\
+	This node takes a user standPoint, objectInteraction, the Player().\
+\
+	The reason this is so important to me is because I can use this node anywhere all I would need a point\{Transform\}, and object\{Interactive-Object\}, and \
+	I can grab, throw, and do multiple stuff, just by three lines of code
+\fs24 \
+\
+9. [6 point] Design a complete Interactive Behavior Tree for your story\
+\
+	
+\fs28 I wasn\'92t able to do so! Sorry\'85\'85\'85\'85\'85\'85..
+\fs24 \
+\
+}
